@@ -27,12 +27,12 @@ app.use(cors(corsOptions));
 import user from "./routes/userRoutes.js";
 app.use("/api/v1", user);
 
-export default app;
-
 app.get("/", (req, res) => {
   res.send(
-    `<h1>Site is Working. Click <a href=${process.env.FRONTEND_URL}>here</a> to visit frontend.</h1>`
+    `<h1>Site is Working. Click <a href=${process.env.FRONTEND}>here</a> to visit frontend.</h1>`
   );
 });
+export default app;
+
 
 app.use(ErrorMiddleware);
