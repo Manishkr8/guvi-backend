@@ -17,7 +17,7 @@ app.use(
 );
 app.use(cookieParser());
 const corsOptions = {
-  origin: "process.env.FRONTEND",
+  origin: process.env.FRONTEND,
   credentials: true, //access-control-allow-credentials:true
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
