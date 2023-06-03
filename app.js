@@ -17,7 +17,7 @@ app.use(
 );
 app.use(cookieParser());
 const corsOptions = {
-  origin: process.env.FRONTEND,
+  origin: https://guvi-frontend-two.vercel.app/,
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
